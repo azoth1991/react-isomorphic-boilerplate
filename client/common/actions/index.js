@@ -27,7 +27,7 @@ function fetchUserInfo() {
 function fetchTags() {
   return dispatch => {
     utils.ajax({
-      url: '/api/tag/get',
+      url: '/api/tag/getTags',
       type: 'get'
     }).then(res => {
       dispatch({
