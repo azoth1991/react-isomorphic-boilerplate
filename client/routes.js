@@ -31,7 +31,15 @@ const routes = {
                 }, 'about')
             }
         }]
+    }, {
+        path: 'login',
+        getComponent(nextState, callback) {
+            require.ensure([], require => {
+                callback(null, require('./login/containers/App'))
+            }, 'login')
+        }
     }]
+
 }
 
 export default routes
