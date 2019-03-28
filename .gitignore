@@ -7,3 +7,11 @@ coverage
 node_modules
 bower_components
 .DS_Store
+.idea/encodings.xml
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/preferred-vcs.xml
+.idea/react-isomorphic-boilerplate.iml
+.idea/vcs.xml
+.idea/workspace.xml

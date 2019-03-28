@@ -1,16 +1,15 @@
 import React, {Component} from 'react'
 import {IndexLink, Link} from 'react-router'
-import styles from '../sass/Navbar'
+import styles from '../sass/ChildBar'
 
-class Navbar extends Component {
+class ChildBar extends Component {
   constructor() {
     super()
   }
 
   render() {
     return (
-      <nav className={styles.navbar}>
-        <h2>AZOTH's blog</h2>
+      <nav className={styles.childBar}>
         <div className="navbar-list">
           <IndexLink className={styles.link} activeClassName={styles.active} to="/">主页</IndexLink>
           <Link className={styles.link} activeClassName={styles.active} to="/explore">归档</Link>
@@ -22,4 +21,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default ChildBar

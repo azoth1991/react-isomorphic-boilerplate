@@ -30,6 +30,13 @@ const routes = {
                     callback(null, require('./about/containers/App'))
                 }, 'about')
             }
+        }, {
+          path: 'hah',
+          getComponent(nextState, callback) {
+            require.ensure([], require => {
+              callback(null, require('./about/containers/App'))
+            }, 'hah')
+          }
         }]
     }, {
         path: 'login',
