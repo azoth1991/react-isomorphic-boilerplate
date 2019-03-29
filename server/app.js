@@ -5,6 +5,7 @@ import logger from 'koa-logger'
 import session from 'koa-session'
 import compress from 'koa-compress'
 import convert from 'koa-convert'
+import spider from './spider'
 
 const app = new Koa()
 
@@ -14,5 +15,6 @@ app.use(compress())
 app.use(bodyParser())
 app.use(json())
 app.use(logger())
+app.use(spider)
 
 export default app

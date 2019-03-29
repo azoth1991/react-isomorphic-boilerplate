@@ -41,7 +41,8 @@ const app = require('./app.js'),
     clientRoute = require('./middlewares/clientRoute'),
     config = require('../build/webpack.dev.config'),
     port = process.env.port || 3000,
-    compiler = webpack(config)
+    compiler = webpack(config),
+    spider = require('./spider')
 
 // Webpack hook event to write html file into `/views/dev` from `/views/tpl` due to server render
 compiler.plugin('emit', (compilation, callback) => {

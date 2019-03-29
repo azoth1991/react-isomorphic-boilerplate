@@ -4,7 +4,6 @@ import {match, RouterContext} from 'react-router'
 import {Provider} from 'react-redux'
 import routes from '../../client/routes'
 import configureStore from '../../client/common/store/configureStore'
-
 const store = configureStore()
 
 async function clientRoute(ctx, next) {

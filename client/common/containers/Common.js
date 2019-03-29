@@ -15,17 +15,16 @@ class Common extends Component {
 
   componentDidMount() {
     const { actions } = this.props;
-    console.log(actions)
     actions.fetchTags();
   }
 
 
   render() {
-    const {children, ...props} = this.props
+    const {children, tag, ...props} = this.props
     return (
       <div className={styles.app}>
         <Navbar/>
-        <ChildBar/>
+        <ChildBar tag={tag}/>
 
         <Main>
           {Children.map(children, child =>

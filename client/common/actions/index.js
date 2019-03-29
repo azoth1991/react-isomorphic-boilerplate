@@ -32,7 +32,7 @@ function fetchTags() {
     }).then(res => {
       dispatch({
         type: types.GET_TAGS,
-        tags: res
+        tags: res.tags
       })
     })
   }
