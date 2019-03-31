@@ -45,6 +45,20 @@ const routes = {
                 callback(null, require('./login/containers/App'))
             }, 'login')
         }
+    }, {
+      path: 'articleAdd',
+      getComponent(nextState, callback) {
+        require.ensure([], require => {
+          callback(null, require('./article/containers/Add'))
+        }, 'articleAdd')
+      }
+    }, {
+      path: 'articleEdit',
+      getComponent(nextState, callback) {
+        require.ensure([], require => {
+          callback(null, require('./article/containers/Edit'))
+        }, 'articleEdit')
+      }
     }]
 
 }
